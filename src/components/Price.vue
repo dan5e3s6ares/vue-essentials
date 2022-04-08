@@ -1,5 +1,10 @@
 <template>
-  <span>{{ this.prefix + Number.parseFloat(this.value * this.conversion).toFixed(this.precision) }}</span>
+  <span>
+    {{
+      this.prefix +
+        Number.parseFloat(this.value * this.conversion).toFixed(this.precision)
+    }}
+  </span>
 </template>
 
 <script>
